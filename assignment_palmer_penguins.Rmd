@@ -7,14 +7,14 @@ date: "2023-12-03"
 ---
 
 ```{r setup, include=FALSE, results='hide'}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 
-```{r, echo=FALSE, results='hide'}
+```{r, echo = FALSE, results='hide', message = FALSE}
 install.packages(c("ggplot2", "palmerpenguins", "janitor", "dplyr", "cowplot"))
 ```
 
-```{r, echo=FALSE, results='hide'}
+```{r, echo = FALSE, results='hide', message = FALSE}
 library(ggplot2)
 library(palmerpenguins)
 library(janitor)
@@ -26,7 +26,7 @@ library(cowplot)
 
 ## a) Provide your figure here:
 
-```{r bad figure code, echo=FALSE, results='hide',fig.keep='all'}
+```{r bad figure code, echo=FALSE, results='hide',fig.keep='all', message = FALSE}
 
 source("functions/cleaning.r")
 
